@@ -218,6 +218,7 @@ ZMK_MACRO(win_sleep,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr RSHFT C_VOL_DN
+#define SUPER_RET &hmr LC(LA(LS(LGUI))) RET
 
 /* Keymap */
 
@@ -231,7 +232,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp G         &kp X         &kp J         &kp K         &kp SQT         X_MB     &qexcl        &kp R         &kp M         &kp F         &kp P           X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               &lt_spc NAV 0 &lt FN RET      X_MH     SMART_NUM     &smart_shft                                               X_RH
+    X_LH                                               &kp LCTRL     &lt_spc NAV 0   X_MH     SUPER_RET     &lt FN BSPC                                               X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
