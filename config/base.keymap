@@ -136,7 +136,12 @@ ZMK_TRI_STATE(smart_mouse,
 
 // Alt+Tab swapper, requires PR #1366
 ZMK_TRI_STATE(swapper,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
+    ignored-key-positions = <LT2>;
+)
+
+ZMK_TRI_STATE(app_swapper,
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
     ignored-key-positions = <LT2>;
 )
 
@@ -238,7 +243,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    X_LT     ___           &kp LS(TAB)   NAV_UP        &swapper      ___             X_MT     &kp PG_UP     NAV_BSPC      NAV_UP        NAV_DEL       ___             X_RT
+    X_LT     ___           &kp LS(TAB)   NAV_UP        &swapper      &app_swapper    X_MT     &kp PG_UP     NAV_BSPC      NAV_UP        NAV_DEL       ___             X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &sk LGUI      NAV_LEFT      NAV_DOWN      NAV_RIGHT     ___             X_MM     &kp PG_DN     &sk LGUI      &sk LCTRL     &sk LALT      &sk LSHFT       X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
