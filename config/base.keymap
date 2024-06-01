@@ -177,10 +177,13 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 // tap: qmark | shift + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
-// tap: left/right parenthesis | shft + tap: less-than/greater-than
-SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
-SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+// tap: left/right parenthesis | ctrl + tap: less-than/greater-than
+SIMPLE_MORPH(lpar_lt, CTL, &kp LPAR, &kp LT)
+SIMPLE_MORPH(rpar_gt, CTL, &kp RPAR, &kp GT)
 
+// tap: left/right  | ctrl + tap: left/right bracket
+SIMPLE_MORPH(lbkt_lb, CTL, &kp LBKT, &kp LBRC)
+SIMPLE_MORPH(rbkt_gb, CTL, &kp RBKT, &kp RBRC)
 // tap: space | shift + tap: spotlight | hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
     flavor = "balanced";
