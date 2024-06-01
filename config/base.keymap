@@ -137,7 +137,7 @@ ZMK_TRI_STATE(smart_mouse,
 // Alt+Tab swapper, requires PR #1366
 ZMK_TRI_STATE(swapper,
     bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
-    ignored-key-positions = <LT2>;
+    ignored-key-positions = <LT3>;
 )
 
 ZMK_TRI_STATE(app_swapper,
