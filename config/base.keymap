@@ -142,7 +142,7 @@ ZMK_TRI_STATE(swapper,
 
 ZMK_TRI_STATE(app_swapper,
     bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-    ignored-key-positions = <LT2>;
+    ignored-key-positions = <LT3>;
 )
 
 // Sticky layer + sticky shift (workaround for issue #1421)
