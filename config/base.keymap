@@ -181,9 +181,35 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 SIMPLE_MORPH(lpar_lt, CTL, &kp LPAR, &kp LT)
 SIMPLE_MORPH(rpar_gt, CTL, &kp RPAR, &kp GT)
 
-// tap: left/right  | ctrl + tap: left/right bracket
+// tap: left/right bracket | ctrl + tap: left/right brace
 SIMPLE_MORPH(lbkt_lb, CTL, &kp LBKT, &kp LBRC)
 SIMPLE_MORPH(rbkt_gb, CTL, &kp RBKT, &kp RBRC)
+
+// tap: double quotes | ctrl + tap: single quote
+SIMPLE_MORPH(dope_quotes, CTL, &kp DOUBLE_QUOTES, &kp SINGLE_QUOTE)
+
+// tap: grave | ctrl + tap: tilde
+SIMPLE_MORPH(gra_tild, CTL, &kp GRAVE, &kp TILDE)
+
+// tap: minus | ctrl + tap: plus
+SIMPLE_MORPH(minus_plus, CTL, &kp MINUS, &kp PLUS)
+
+// tap: esc | ctrl + tap: at
+SIMPLE_MORPH(esc_at, CTL, &kp ESC, &kp AT)
+
+// tap: pipe | ctrl + tap: percent
+SIMPLE_MORPH(pi_per, CTL, &kp PIPE, &kp PRCNT)
+
+// tap: backspace | ctrl + tap: hash
+SIMPLE_MORPH(back_ha, CTL, &kp BSLH, &kp HASH)
+
+// tap: equal | ctrl + tap: caret
+SIMPLE_MORPH(eq_ca, CTL, &kp EQUAL, &kp CARET)
+// tap: underscore | ctrl + tap: dollar
+SIMPLE_MORPH(und_dllr, CTL, &kp UNDER, &kp DLLR)
+
+
+
 // tap: space | shift + tap: spotlight | hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
     flavor = "balanced";
