@@ -201,7 +201,7 @@ SIMPLE_MORPH(esc_at, CTL, &kp ESC, &kp AT)
 SIMPLE_MORPH(pi_per, CTL, &kp PIPE, &kp PRCNT)
 
 // tap: backspace | ctrl + tap: hash
-SIMPLE_MORPH(back_ha, CTL, &kp BSLH, &kp HASH)
+SIMPLE_MORPH(back_ha, CTL, &kp BSPC, &kp HASH)
 
 // tap: equal | ctrl + tap: caret
 SIMPLE_MORPH(eq_ca, CTL, &kp EQUAL, &kp CARET)
