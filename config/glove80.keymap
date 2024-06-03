@@ -15,9 +15,9 @@
 #define X_MB    &none &none &none       &none &none &none
 #define X_RB    &none
 
-#define X_LH    &none &none &none &kp LEFT &kp RIGHT
+#define X_LH    &bootloader &none &none &kp LEFT &kp RIGHT
 #define X_MH    &lt NAV BSPC SMART_NUM
-#define X_RH    &kp UP &kp DOWN &none &none &none
+#define X_RH    &kp UP &kp DOWN &none &none &bootloader
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
