@@ -192,22 +192,24 @@ SIMPLE_MORPH(dope_quotes, CTL, &kp DOUBLE_QUOTES, &kp SINGLE_QUOTE)
 SIMPLE_MORPH(gra_tild, CTL, &kp GRAVE, &kp TILDE)
 
 // tap: minus | ctrl + tap: plus
-SIMPLE_MORPH(minus_plus, CTL, &kp MINUS, &kp PLUS)
+SIMPLE_MORPH(minus_plus, SFT, &kp MINUS, &kp PLUS)
 
 // tap: esc | ctrl + tap: at
-SIMPLE_MORPH(esc_at, CTL, &kp ESC, &kp AT)
+SIMPLE_MORPH(esc_at, SFT, &kp ESC, &kp AT)
 
 // tap: pipe | ctrl + tap: percent
-SIMPLE_MORPH(pi_per, CTL, &kp PIPE, &kp PRCNT)
+SIMPLE_MORPH(pi_per, SFT, &kp PIPE, &kp PRCNT)
 
 // tap: backspace | ctrl + tap: hash
 SIMPLE_MORPH(back_ha, CTL, &kp BSPC, &kp HASH)
 
 // tap: equal | ctrl + tap: caret
-SIMPLE_MORPH(eq_ca, CTL, &kp EQUAL, &kp CARET)
+SIMPLE_MORPH(eq_ca, SFT, &kp EQUAL, &kp CARET)
 // tap: underscore | ctrl + tap: dollar
-SIMPLE_MORPH(und_dllr, CTL, &kp UNDER, &kp DLLR)
+SIMPLE_MORPH(und_dllr, SFT, &kp UNDER, &kp DLLR)
 
+SIMPLE_MORPH(fsl_col, SFT, &kp FSLH, &kp COLON)
+SIMPLE_MORPH(bsl_scol, CTL, &kp BSLH, &kp SEMICOLON)
 
 
 // tap: space | shift + tap: spotlight | hold: activate layer
