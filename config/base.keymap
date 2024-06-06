@@ -188,7 +188,7 @@ SIMPLE_MORPH(lbkt_lb, CTL, &kp LBKT, &kp LBRC)
 SIMPLE_MORPH(rbkt_gb, CTL, &kp RBKT, &kp RBRC)
 
 // tap: double quotes | ctrl + tap: single quote
-SIMPLE_MORPH(dope_quotes, CTL, &kp DOUBLE_QUOTES, &kp SINGLE_QUOTE)
+SIMPLE_MORPH(dope_quotes, SFT, &kp DOUBLE_QUOTES, &kp SINGLE_QUOTE)
 
 // tap: grave | ctrl + tap: tilde
 SIMPLE_MORPH(gra_tild, CTL, &kp GRAVE, &kp TILDE)
