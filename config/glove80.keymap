@@ -16,7 +16,7 @@
 #define X_RB    &none
 
 #define X_LH    &none &none &none &none &none
-#define X_MH    &lt NAV TAB SMART_NUM
+#define X_MH    &kp LCTRL HYPER_RET
 #define X_RH    &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none 
 
 /* activate bluetooth */
