@@ -139,12 +139,12 @@ ZMK_TAP_DANCE(num_dance,
 // Alt+Tab swapper, requires PR #1366
 ZMK_TRI_STATE(swapper,
     bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
-    ignored-key-positions = <LT3>;
+    ignored-key-positions = <LT4>;
 )
 
 ZMK_TRI_STATE(app_swapper,
     bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-    ignored-key-positions = <LT3>;
+    ignored-key-positions = <LT4>;
 )
 
 // Sticky layer + sticky shift (workaround for issue #1421)
