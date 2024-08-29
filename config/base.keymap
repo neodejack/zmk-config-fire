@@ -156,13 +156,15 @@ ZMK_TRI_STATE(app_swapper,
 // tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
 // SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
 // SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
-
 // tap: dot | shift + tap: colon | ctrl + shift + tap: >
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 
 // tap: qmark | shift + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
+
+// tap: excl | shift + tap: qmark
+SIMPLE_MORPH(eqmark, SFT, &kp EXCL, &kp QMARK)
 
 // tap: left/right parenthesis | ctrl + tap: less-than/greater-than
 SIMPLE_MORPH(lpar_lt, CTL, &kp LPAR, &kp LT)
@@ -195,7 +197,7 @@ SIMPLE_MORPH(eq_ca, SFT, &kp EQUAL, &kp CARET)
 // tap: underscore | ctrl + tap: dollar
 SIMPLE_MORPH(und_dllr, SFT, &kp UNDER, &kp DLLR)
 
-SIMPLE_MORPH(col_fsl, SFT, &kp COLON, &kp FSLH)
+SIMPLE_MORPH(col_fsl, CTL, &kp COLON, &kp FSLH)
 SIMPLE_MORPH(fsl_col, SFT, &kp FSLH, &kp COLON)
 SIMPLE_MORPH(bsl_scol, CTL, &kp BSLH, &kp SEMICOLON)
 
@@ -254,7 +256,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &kp C         &kp I         &hml LGUI E   &kp A         &hrm_hp LALT COMMA X_MM  &hrm_hp LALT DOT &kp H      &hmr RGUI T   &kp S         &kp N           X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     &kp G         &kp X         &kp J         &kp K         &col_fsl        X_MB     &qexcl        &kp R         &kp M         &kp F         &kp P           X_RB
+    X_LB     &kp G         &kp X         &kp J         &kp K         &col_fsl        X_MB     &eqmark        &kp R         &kp M         &kp F         &kp P           X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                               &spc_morph    &kp LCTRL       X_MH     HYPER_RET     &smart_shft                                               X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
