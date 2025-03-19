@@ -75,6 +75,8 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
     )
 
 MAKE_HRM_HOLD_PREFERRED(hrm_hp ,&kp, &kp)
+MAKE_HRM_HOLD_PREFERRED(hrm_hp_colsl ,&kp, &col_fsl)
+MAKE_HRM_HOLD_PREFERRED(hrm_hp_eqmark ,&kp, &eqmark)
 /* Nav cluster */
 
 // long-tap action on hold, short-tap action on all interrupts
@@ -254,9 +256,9 @@ ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     &kp B         &kp Y         &kp O         &kp U         &kp Z           X_MT     &kp Q         &kp L         &kp D         &kp W         &kp V           X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &kp C         &kp I         &hml LGUI E   &kp A         &hrm_hp LALT COMMA X_MM  &hrm_hp LALT DOT &kp H      &hmr RGUI T   &kp S         &kp N           X_RM
+    X_LM     &kp C         &kp I         &kp E         &kp A         &hrm_hp LGUI COMMA X_MM  &hrm_hp LGUI DOT &kp H      &kp T         &kp S         &kp N           X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     &kp G         &kp X         &kp J         &kp K         &col_fsl        X_MB     &eqmark        &kp R         &kp M         &kp F         &kp P           X_RB
+    X_LB     &kp G         &kp X         &kp J         &kp K         &hrm_hp_colsl LALT X_MB &hrm_hp_eqmark LALT &kp R    &kp M         &kp F         &kp P           X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                               &spc_morph    &kp LCTRL       X_MH     HYPER_RET     &smart_shft                                               X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
